@@ -1,0 +1,31 @@
+# Node.js
+
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- task: PackageAzureDevOpsExtension@2
+  inputs:
+    rootFolder: 
+    outputPath: 'conjur-extension-azure-devops.vsix'
+    updateTasksVersion: false
+
+- task: PublishVisualStudioExtension@2
+  inputs:
+    connectedServiceName: https://dev.azure.com/andcope1995/testing-conjur/_admin/_services
+    vsixFile: 'conjur-extension-azure-devops.vsix'
+    manifestFile: 'vss-extension.json'
+    publisherId: 'AndrewCopeland'
+
