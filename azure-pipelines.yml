@@ -19,4 +19,13 @@ steps:
 - task: PackageAzureDevOpsExtension@2
   inputs:
     rootFolder: 
+    outputPath: 'conjur-extension-azure-devops.vsix'
     updateTasksVersion: false
+
+- task: PublishVisualStudioExtension@2
+  inputs:
+    connectedServiceName: https://marketplace.visualstudio.com/
+    vsixFile: 'conjur-extension-azure-devops.vsix'
+    manifestFile: 'vss-extension.json'
+    publisherId: 'AndrewCopeland'
+
