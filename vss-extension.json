@@ -2,8 +2,9 @@
     "manifestVersion": 1,
     "id": "cyberark-conjur-secrets",
     "name": "Cyberark Conjur Secrets",
-    "version": "0.0.5",
+    "version": "0.0.8",
     "publisher": "AndrewCopeland",
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -15,6 +16,22 @@
     ],
     "icons": {
         "default": "images/extension-icon.png"        
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/openalm/Extension-UtilitiesPack/blob/master/Utilites/overview.md"
+        },
+        "issues": {
+            "uri": "https://github.com/openalm/Extension-UtilitiesPack/issues"
+        },
+        "repository": {
+            "uri": "https://github.com/openalm/Extension-UtilitiesPack"
+        }
+	},
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
     },
     "files": [
         {
