@@ -24,7 +24,7 @@ steps:
 
 - task: PublishVisualStudioExtension@2
   inputs:
-    connectedServiceName: https://marketplace.visualstudio.com/
+    connectedServiceName: https://dev.azure.com/andcope1995/testing-conjur/_admin/_services
     vsixFile: 'conjur-extension-azure-devops.vsix'
     manifestFile: 'vss-extension.json'
     publisherId: 'AndrewCopeland'
