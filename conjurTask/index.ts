@@ -87,6 +87,7 @@ function authenticate(hostname: string, account : string, username : string, api
 }
 
 function getSecret(hostname: string, account : string, token : string, secretId : string, ignoreSsl : boolean) {
+    secretId = encodeURIComponent(secretId);
     var endpoint = `/secrets/${account}/variable/${secretId}`;
     token = getTokenHeader(token);
     return sendHttpRequest(hostname, endpoint, 'GET', token, null, ignoreSsl)
