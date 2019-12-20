@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "cyberark-conjur-secrets",
     "name": "Cyberark Conjur Secrets",
-    "version": "0.0.8",
+    "version": "0.0.12",
     "publisher": "AndrewCopeland",
     "public": true,
     "targets": [
@@ -19,13 +19,13 @@
     },
     "links": {
         "getstarted": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack/blob/master/Utilites/overview.md"
+            "uri": "https://github.com/AndrewCopeland/conjur-extension-azure-devops/blob/master/overview.md"
         },
         "issues": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack/issues"
+            "uri": "https://github.com/AndrewCopeland/conjur-extension-azure-devops/issues"
         },
         "repository": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack"
+            "uri": "https://github.com/AndrewCopeland/conjur-extension-azure-devops"
         }
 	},
     "content": {

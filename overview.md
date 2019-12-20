@@ -8,7 +8,7 @@ After installing the extension, you can add one (or more) of the tasks to a new 
 DO NOT STORE THE CONJUR API KEY IN PLAIN TEXT. Store the conjur api key either in the Azure Key Vault or as a secret variable on the pipeline.
 
 
-![config-task](images/config-get-conjur-secret.png)
+![config-task](config-get-conjur-secret.png)
 
 ## Available tasks
 
